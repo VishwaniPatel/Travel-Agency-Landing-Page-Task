@@ -1,0 +1,91 @@
+// Import Google font
+
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// Global styles goes here
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height  : 100%;
+    width: 100%;
+    overflow: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container,
+.container-fluid {
+  position: relative;
+}
+.all-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-holder {
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    will-change: transform, opacity, filter;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    z-index: 0;
+  
+    &.bg-right {
+      left: auto;
+      right: 0;
+    }  
+  }
+  
+  .bg-primary-gradient{
+    background: #FFF7F5;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+  }
+  
+  
+// helper classes
+.flex-center {
+    align-items: center;
+    justify-content: center;
+  }
+  .flex-between-center {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-end-center {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .flex-1{
+    flex: 1;
+  }
+  
+  .font-sans-serif {
+    font-family: $font-family-sans-serif;
+  }
+  .font-base {
+    font-family: $font-family-base;
+  }
+  .font-cursive{
+    font-family:  'Volkhov', 'DM Serif Display', cursive;
+  }
+  
+  .text-smallcaps {
+    font-variant: small-caps;
+  }
+  .text-superscript {
+    vertical-align: super;
+  }
+  .text-word-break {
+    word-break: break-word;
+  }
+  

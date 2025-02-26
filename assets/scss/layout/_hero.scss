@@ -1,0 +1,35 @@
+.hero-title {
+  font-family: $font-family-cursive;
+  font-weight: $font-weight-bold;
+  font-size: 84px;
+  color: $navy-blue;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+
+  @include media-breakpoint-up(xl){ 
+    font-size: map-get($font-sizes, 13);
+  }
+
+  @include media-breakpoint-up(xxl){ 
+    font-size: map-get($font-sizes, 14);
+  }
+}
+.hero-vector{
+  position: absolute;
+  top: 110px;
+  right:0px;
+  @include media-breakpoint-down(lg){ 
+   display: none;
+  } 
+}
+
+.hero-img{
+  width: 105%;
+  margin-left: -(map-get($spacers, 8));
+
+  @include media-breakpoint-between(md, lg){
+    width: 135%;
+    margin-left: -(map-get($spacers, 7));
+  }
+}
